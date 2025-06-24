@@ -6,7 +6,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #fcf9f4;
+  background: #f8f8f8;
   color: #111;
   font-family: 'Inter', sans-serif;
 }
@@ -17,8 +17,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  border-bottom: 1px solid #ddd;
-  background: rgba(252, 249, 244, 0.95);
+  border-bottom: 1px solid #ccc;
+  background: rgba(248, 248, 248, 0.95);
   backdrop-filter: blur(5px);
   border-radius: 0 0 20px 20px;
 }
@@ -27,13 +27,13 @@ header h1 {
   font-family: 'Playfair Display', serif;
   font-size: 28px;
   font-weight: 700;
-  color: #11213b;
+  color: #4b0082;
 }
 
 nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: #11213b;
+  color: #4b0082;
   font-weight: 500;
   position: relative;
   transition: color 0.3s;
@@ -44,13 +44,13 @@ nav a::after {
   display: block;
   width: 0;
   height: 2px;
-  background: #d4af37;
+  background: #c0c0c0;
   transition: width 0.3s;
   border-radius: 2px;
 }
 
 nav a:hover {
-  color: #d4af37;
+  color: #c0c0c0;
 }
 
 nav a:hover::after {
@@ -61,7 +61,7 @@ nav a:hover::after {
 .hero {
   text-align: center;
   padding: 130px 20px 100px;
-  background: linear-gradient(135deg, #fdfaf7 0%, #fcf9f4 100%);
+  background: linear-gradient(135deg, #fefefe 0%, #f8f8f8 100%);
   animation: fadeIn 1.5s ease;
   border-radius: 0 0 80px 80px;
 }
@@ -70,15 +70,15 @@ nav a:hover::after {
   font-size: 40px;
   font-family: 'Playfair Display', serif;
   margin-bottom: 30px;
-  color: #11213b;
+  color: #4b0082;
 }
 
 .btn {
   display: inline-block;
   padding: 14px 30px;
-  border: 2px solid #d4af37;
+  border: 2px solid #4b0082;
   text-decoration: none;
-  color: #d4af37;
+  color: #4b0082;
   background: transparent;
   border-radius: 30px;
   transition: all 0.3s ease;
@@ -87,7 +87,7 @@ nav a:hover::after {
 }
 
 .btn:hover {
-  background: #d4af37;
+  background: #4b0082;
   color: #fff;
 }
 
@@ -103,14 +103,14 @@ section h3 {
   font-family: 'Playfair Display', serif;
   font-size: 28px;
   margin-bottom: 20px;
-  color: #11213b;
+  color: #4b0082;
 }
 
 section h4 {
   font-family: 'Playfair Display', serif;
   font-size: 22px;
   margin: 20px 0 10px;
-  color: #11213b;
+  color: #4b0082;
 }
 
 ul {
@@ -144,11 +144,11 @@ p {
 .project h4 {
   font-size: 22px;
   margin-bottom: 12px;
-  color: #11213b;
+  color: #4b0082;
 }
 
 .project a {
-  color: #d4af37;
+  color: #4b0082;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: all 0.3s ease;
@@ -156,28 +156,28 @@ p {
 }
 
 .project a:hover {
-  border-bottom: 1px solid #d4af37;
+  border-bottom: 1px solid #4b0082;
 }
 
 /* Contact Section */
 #contact a {
-  color: #d4af37;
+  color: #4b0082;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: all 0.3s ease;
 }
 
 #contact a:hover {
-  border-bottom: 1px solid #d4af37;
+  border-bottom: 1px solid #4b0082;
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 35px 20px;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #ccc;
   font-size: 14px;
-  background: #fcf9f4;
+  background: #f8f8f8;
   color: #777;
   border-radius: 30px 30px 0 0;
 }
@@ -190,15 +190,26 @@ footer p {
 hr {
   border: 0;
   height: 1px;
-  background: #ddd;
+  background: #ccc;
   margin: 70px 0;
   border-radius: 1px;
 }
 
-/* Fade Animation */
+/* Fade In Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px);}
   to { opacity: 1; transform: translateY(0);}
+}
+
+/* Inertia Title Animation */
+@keyframes driftIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  60% { opacity: 1; transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+.hero h2, section h3 {
+  animation: driftIn 1.3s ease-out;
 }
 
 /* Content Boxes */
@@ -213,32 +224,6 @@ hr {
 
 /* Fade In Box Animation */
 @keyframes fadeInBox {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
-
-/* Inertia Title Animation */
-@keyframes driftIn {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  60% {
-    opacity: 1;
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.hero h2, section h3 {
-  animation: driftIn 1.3s ease-out;
-}
-
