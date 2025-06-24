@@ -6,8 +6,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #ffffff;
-  color: #1a1a2e;
+  background: linear-gradient(135deg, #fffaf0 0%, #fceff9 100%);
+  color: #2c003e;
   font-family: 'Inter', sans-serif;
 }
 
@@ -17,20 +17,22 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #e7d5ec;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
 }
 
 header h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 700;
-  color: #1a1a2e;
+  color: #4b006e;
 }
 
 nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: #1a1a2e;
+  color: #4b006e;
   font-weight: 500;
   position: relative;
 }
@@ -40,7 +42,7 @@ nav a::after {
   display: block;
   width: 0;
   height: 2px;
-  background: #e1ad01;
+  background: #ff8ecb;
   transition: width 0.3s;
 }
 
@@ -51,24 +53,24 @@ nav a:hover::after {
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 120px 20px 80px;
-  background: linear-gradient(135deg, #fdfcfb 0%, #e8edee 100%);
+  padding: 130px 20px 100px;
+  background: linear-gradient(135deg, #fff1f9 0%, #fceff9 50%, #fff 100%);
   animation: fadeIn 1.5s ease;
 }
 
 .hero h2 {
-  font-size: 40px;
+  font-size: 42px;
   font-family: 'Playfair Display', serif;
   margin-bottom: 30px;
-  color: #1a1a2e;
+  color: #4b006e;
 }
 
 .btn {
   display: inline-block;
   padding: 14px 30px;
-  border: 2px solid #e1ad01;
+  border: 2px solid #ff8ecb;
   text-decoration: none;
-  color: #e1ad01;
+  color: #ff8ecb;
   background: transparent;
   border-radius: 30px;
   transition: all 0.3s ease;
@@ -77,7 +79,7 @@ nav a:hover::after {
 }
 
 .btn:hover {
-  background: #e1ad01;
+  background: #ff8ecb;
   color: #fff;
 }
 
@@ -93,45 +95,46 @@ section h3 {
   font-family: 'Playfair Display', serif;
   font-size: 28px;
   margin-bottom: 20px;
-  color: #1a1a2e;
+  color: #4b006e;
 }
 
 section h4 {
   font-family: 'Playfair Display', serif;
   font-size: 22px;
   margin: 20px 0 10px;
-  color: #1a1a2e;
+  color: #4b006e;
 }
 
 ul {
   list-style-type: disc;
   padding-left: 20px;
+  color: #333;
 }
 
 p {
-  line-height: 1.7;
+  line-height: 1.8;
   margin-bottom: 18px;
   font-size: 16px;
-  color: #333;
+  color: #2c003e;
 }
 
 /* Project Cards */
 .project {
   margin-bottom: 40px;
-  background: #f7f7f7;
+  background: #fff7fd;
   padding: 25px;
   border-radius: 20px;
-  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 5px 15px rgba(219, 181, 255, 0.2);
 }
 
 .project h4 {
   font-size: 22px;
   margin-bottom: 12px;
-  color: #1a1a2e;
+  color: #4b006e;
 }
 
 .project a {
-  color: #e1ad01;
+  color: #ff8ecb;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: all 0.3s ease;
@@ -139,29 +142,29 @@ p {
 }
 
 .project a:hover {
-  border-bottom: 1px solid #e1ad01;
+  border-bottom: 1px solid #ff8ecb;
 }
 
 /* Contact Section */
 #contact a {
-  color: #e1ad01;
+  color: #ff8ecb;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: all 0.3s ease;
 }
 
 #contact a:hover {
-  border-bottom: 1px solid #e1ad01;
+  border-bottom: 1px solid #ff8ecb;
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 35px 20px;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #e7d5ec;
   font-size: 14px;
-  background: #fafafa;
-  color: #777;
+  background: #fffaf0;
+  color: #926da7;
 }
 
 footer p {
@@ -172,7 +175,7 @@ footer p {
 hr {
   border: 0;
   height: 1px;
-  background: #ddd;
+  background: #e7d5ec;
   margin: 70px 0;
 }
 
