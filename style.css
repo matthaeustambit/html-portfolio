@@ -62,7 +62,7 @@ nav a:hover::after {
   padding: 130px 20px 100px;
   background: linear-gradient(135deg, #fdfaf7 0%, #fbf9f4 100%);
   animation: fadeIn 1.5s ease;
-  border-radius: 0 0 30px 30px;
+  border-radius: 0 0 80px 80px;
 }
 
 .hero h2 {
