@@ -6,7 +6,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #f8f8f8;
+  background: #fdf5e6;
   color: #111;
   font-family: 'Inter', sans-serif;
 }
@@ -17,8 +17,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  border-bottom: 1px solid #ccc;
-  background: rgba(248, 248, 248, 0.95);
+  border-bottom: 1px solid #ddd;
+  background: rgba(253, 245, 230, 0.95);
   backdrop-filter: blur(5px);
   border-radius: 0 0 20px 20px;
 }
@@ -27,13 +27,13 @@ header h1 {
   font-family: 'Playfair Display', serif;
   font-size: 28px;
   font-weight: 700;
-  color: #4b0082;
+  color: #111;
 }
 
 nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: #4b0082;
+  color: #111;
   font-weight: 500;
   position: relative;
   transition: color 0.3s;
@@ -44,13 +44,13 @@ nav a::after {
   display: block;
   width: 0;
   height: 2px;
-  background: #c0c0c0;
+  background: #c8a45d;
   transition: width 0.3s;
   border-radius: 2px;
 }
 
 nav a:hover {
-  color: #c0c0c0;
+  color: #c8a45d;
 }
 
 nav a:hover::after {
@@ -61,7 +61,7 @@ nav a:hover::after {
 .hero {
   text-align: center;
   padding: 130px 20px 100px;
-  background: linear-gradient(135deg, #fefefe 0%, #f8f8f8 100%);
+  background: linear-gradient(135deg, #fdf5e6 0%, #f7f1e4 100%);
   animation: fadeIn 1.5s ease;
   border-radius: 0 0 80px 80px;
 }
@@ -70,15 +70,15 @@ nav a:hover::after {
   font-size: 40px;
   font-family: 'Playfair Display', serif;
   margin-bottom: 30px;
-  color: #4b0082;
+  color: #111;
 }
 
 .btn {
   display: inline-block;
   padding: 14px 30px;
-  border: 2px solid #4b0082;
+  border: 2px solid #c8a45d;
   text-decoration: none;
-  color: #4b0082;
+  color: #c8a45d;
   background: transparent;
   border-radius: 30px;
   transition: all 0.3s ease;
@@ -87,7 +87,7 @@ nav a:hover::after {
 }
 
 .btn:hover {
-  background: #4b0082;
+  background: #c8a45d;
   color: #fff;
 }
 
@@ -103,14 +103,14 @@ section h3 {
   font-family: 'Playfair Display', serif;
   font-size: 28px;
   margin-bottom: 20px;
-  color: #4b0082;
+  color: #111;
 }
 
 section h4 {
   font-family: 'Playfair Display', serif;
   font-size: 22px;
   margin: 20px 0 10px;
-  color: #4b0082;
+  color: #111;
 }
 
 ul {
@@ -144,11 +144,11 @@ p {
 .project h4 {
   font-size: 22px;
   margin-bottom: 12px;
-  color: #4b0082;
+  color: #111;
 }
 
 .project a {
-  color: #4b0082;
+  color: #c8a45d;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: all 0.3s ease;
@@ -156,28 +156,28 @@ p {
 }
 
 .project a:hover {
-  border-bottom: 1px solid #4b0082;
+  border-bottom: 1px solid #c8a45d;
 }
 
 /* Contact Section */
 #contact a {
-  color: #4b0082;
+  color: #c8a45d;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: all 0.3s ease;
 }
 
 #contact a:hover {
-  border-bottom: 1px solid #4b0082;
+  border-bottom: 1px solid #c8a45d;
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 35px 20px;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #ddd;
   font-size: 14px;
-  background: #f8f8f8;
+  background: #fdf5e6;
   color: #777;
   border-radius: 30px 30px 0 0;
 }
@@ -190,7 +190,7 @@ footer p {
 hr {
   border: 0;
   height: 1px;
-  background: #ccc;
+  background: #ddd;
   margin: 70px 0;
   border-radius: 1px;
 }
