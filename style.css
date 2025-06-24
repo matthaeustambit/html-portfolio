@@ -6,7 +6,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #fdfcfb;
+  background: #fcf9f4;
   color: #111;
   font-family: 'Inter', sans-serif;
 }
@@ -18,7 +18,7 @@ header {
   align-items: center;
   padding: 20px 50px;
   border-bottom: 1px solid #ddd;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(252, 249, 244, 0.95);
   backdrop-filter: blur(5px);
   border-radius: 0 0 20px 20px;
 }
@@ -27,12 +27,13 @@ header h1 {
   font-family: 'Playfair Display', serif;
   font-size: 28px;
   font-weight: 700;
+  color: #11213b;
 }
 
 nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: #111;
+  color: #11213b;
   font-weight: 500;
   position: relative;
   transition: color 0.3s;
@@ -43,13 +44,13 @@ nav a::after {
   display: block;
   width: 0;
   height: 2px;
-  background: #bfa760;
+  background: #d4af37;
   transition: width 0.3s;
   border-radius: 2px;
 }
 
 nav a:hover {
-  color: #bfa760;
+  color: #d4af37;
 }
 
 nav a:hover::after {
@@ -60,7 +61,7 @@ nav a:hover::after {
 .hero {
   text-align: center;
   padding: 130px 20px 100px;
-  background: linear-gradient(135deg, #fdfaf7 0%, #fbf9f4 100%);
+  background: linear-gradient(135deg, #fdfaf7 0%, #fcf9f4 100%);
   animation: fadeIn 1.5s ease;
   border-radius: 0 0 80px 80px;
 }
@@ -69,15 +70,15 @@ nav a:hover::after {
   font-size: 40px;
   font-family: 'Playfair Display', serif;
   margin-bottom: 30px;
-  color: #111;
+  color: #11213b;
 }
 
 .btn {
   display: inline-block;
   padding: 14px 30px;
-  border: 2px solid #bfa760;
+  border: 2px solid #d4af37;
   text-decoration: none;
-  color: #bfa760;
+  color: #d4af37;
   background: transparent;
   border-radius: 30px;
   transition: all 0.3s ease;
@@ -86,7 +87,7 @@ nav a:hover::after {
 }
 
 .btn:hover {
-  background: #bfa760;
+  background: #d4af37;
   color: #fff;
 }
 
@@ -102,14 +103,14 @@ section h3 {
   font-family: 'Playfair Display', serif;
   font-size: 28px;
   margin-bottom: 20px;
-  color: #111;
+  color: #11213b;
 }
 
 section h4 {
   font-family: 'Playfair Display', serif;
   font-size: 22px;
   margin: 20px 0 10px;
-  color: #111;
+  color: #11213b;
 }
 
 ul {
@@ -143,10 +144,11 @@ p {
 .project h4 {
   font-size: 22px;
   margin-bottom: 12px;
+  color: #11213b;
 }
 
 .project a {
-  color: #bfa760;
+  color: #d4af37;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: all 0.3s ease;
@@ -154,19 +156,19 @@ p {
 }
 
 .project a:hover {
-  border-bottom: 1px solid #bfa760;
+  border-bottom: 1px solid #d4af37;
 }
 
 /* Contact Section */
 #contact a {
-  color: #bfa760;
+  color: #d4af37;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: all 0.3s ease;
 }
 
 #contact a:hover {
-  border-bottom: 1px solid #bfa760;
+  border-bottom: 1px solid #d4af37;
 }
 
 /* Footer */
@@ -175,7 +177,7 @@ footer {
   padding: 35px 20px;
   border-top: 1px solid #ddd;
   font-size: 14px;
-  background: #f9f8f5;
+  background: #fcf9f4;
   color: #777;
   border-radius: 30px 30px 0 0;
 }
