@@ -87,13 +87,12 @@ nav a:hover::after {
   font-size: 16px;
 .project a {
   display: inline-block;
-  margin: 10px 10px 0 0;
+  margin: 10px 5px 0 0;
+  text-decoration: none;
 }
 
-.project .btn {
-  margin-top: 15px;
-}
-
+.project a.btn {
+  margin-top: 10px;
 }
 
 .btn:hover {
