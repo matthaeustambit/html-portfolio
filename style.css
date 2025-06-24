@@ -6,8 +6,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #fffaf0 0%, #fceff9 100%);
-  color: #2c003e;
+  background: #fdfcfb;
+  color: #111;
   font-family: 'Inter', sans-serif;
 }
 
@@ -17,24 +17,25 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  border-bottom: 1px solid #e7d5ec;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #ddd;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(5px);
+  border-radius: 0 0 20px 20px;
 }
 
 header h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 700;
-  color: #4b006e;
 }
 
 nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: #4b006e;
+  color: #111;
   font-weight: 500;
   position: relative;
+  transition: color 0.3s;
 }
 
 nav a::after {
@@ -42,8 +43,13 @@ nav a::after {
   display: block;
   width: 0;
   height: 2px;
-  background: #ff8ecb;
+  background: #bfa760;
   transition: width 0.3s;
+  border-radius: 2px;
+}
+
+nav a:hover {
+  color: #bfa760;
 }
 
 nav a:hover::after {
@@ -54,23 +60,24 @@ nav a:hover::after {
 .hero {
   text-align: center;
   padding: 130px 20px 100px;
-  background: linear-gradient(135deg, #fff1f9 0%, #fceff9 50%, #fff 100%);
+  background: linear-gradient(135deg, #fdfaf7 0%, #fbf9f4 100%);
   animation: fadeIn 1.5s ease;
+  border-radius: 0 0 30px 30px;
 }
 
 .hero h2 {
-  font-size: 42px;
+  font-size: 40px;
   font-family: 'Playfair Display', serif;
   margin-bottom: 30px;
-  color: #4b006e;
+  color: #111;
 }
 
 .btn {
   display: inline-block;
   padding: 14px 30px;
-  border: 2px solid #ff8ecb;
+  border: 2px solid #bfa760;
   text-decoration: none;
-  color: #ff8ecb;
+  color: #bfa760;
   background: transparent;
   border-radius: 30px;
   transition: all 0.3s ease;
@@ -79,7 +86,7 @@ nav a:hover::after {
 }
 
 .btn:hover {
-  background: #ff8ecb;
+  background: #bfa760;
   color: #fff;
 }
 
@@ -95,14 +102,14 @@ section h3 {
   font-family: 'Playfair Display', serif;
   font-size: 28px;
   margin-bottom: 20px;
-  color: #4b006e;
+  color: #111;
 }
 
 section h4 {
   font-family: 'Playfair Display', serif;
   font-size: 22px;
   margin: 20px 0 10px;
-  color: #4b006e;
+  color: #111;
 }
 
 ul {
@@ -115,26 +122,31 @@ p {
   line-height: 1.8;
   margin-bottom: 18px;
   font-size: 16px;
-  color: #2c003e;
+  color: #222;
 }
 
 /* Project Cards */
 .project {
   margin-bottom: 40px;
-  background: #fff7fd;
+  background: #fff;
   padding: 25px;
   border-radius: 20px;
-  box-shadow: 0 5px 15px rgba(219, 181, 255, 0.2);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
 }
 
 .project h4 {
   font-size: 22px;
   margin-bottom: 12px;
-  color: #4b006e;
 }
 
 .project a {
-  color: #ff8ecb;
+  color: #bfa760;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: all 0.3s ease;
@@ -142,29 +154,30 @@ p {
 }
 
 .project a:hover {
-  border-bottom: 1px solid #ff8ecb;
+  border-bottom: 1px solid #bfa760;
 }
 
 /* Contact Section */
 #contact a {
-  color: #ff8ecb;
+  color: #bfa760;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: all 0.3s ease;
 }
 
 #contact a:hover {
-  border-bottom: 1px solid #ff8ecb;
+  border-bottom: 1px solid #bfa760;
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 35px 20px;
-  border-top: 1px solid #e7d5ec;
+  border-top: 1px solid #ddd;
   font-size: 14px;
-  background: #fffaf0;
-  color: #926da7;
+  background: #f9f8f5;
+  color: #777;
+  border-radius: 30px 30px 0 0;
 }
 
 footer p {
@@ -175,8 +188,9 @@ footer p {
 hr {
   border: 0;
   height: 1px;
-  background: #e7d5ec;
+  background: #ddd;
   margin: 70px 0;
+  border-radius: 1px;
 }
 
 /* Fade Animation */
