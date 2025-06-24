@@ -200,3 +200,45 @@ hr {
   from { opacity: 0; transform: translateY(20px);}
   to { opacity: 1; transform: translateY(0);}
 }
+
+/* Content Boxes */
+.content-box {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  margin-bottom: 70px;
+  animation: fadeInBox 1s ease-out;
+}
+
+/* Fade In Box Animation */
+@keyframes fadeInBox {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Inertia Title Animation */
+@keyframes driftIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.hero h2, section h3 {
+  animation: driftIn 1.3s ease-out;
+}
+
