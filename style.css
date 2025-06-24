@@ -1,0 +1,133 @@
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #111;
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #111;
+  transition: width 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 20px 80px;
+  animation: fadeIn 2s ease;
+}
+
+.hero h2 {
+  font-size: 38px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border: 1px solid #111;
+  text-decoration: none;
+  color: #111;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #111;
+  color: #fff;
+}
+
+section {
+  padding: 60px 50px;
+  max-width: 900px;
+  margin: 0 auto;
+  animation: fadeIn 2s ease;
+}
+
+section h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+section h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  margin: 20px 0 10px;
+}
+
+.project {
+  margin-bottom: 30px;
+}
+
+.project h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.project a {
+  color: #111;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s;
+}
+
+.project a:hover {
+  border-bottom: 1px solid #111;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Divider line style */
+hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 60px 0;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
