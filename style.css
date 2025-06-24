@@ -85,6 +85,15 @@ nav a:hover::after {
   transition: all 0.3s ease;
   font-weight: 600;
   font-size: 16px;
+.project a {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+}
+
+.project .btn {
+  margin-top: 15px;
+}
+
 }
 
 .btn:hover {
